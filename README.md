@@ -1,8 +1,8 @@
 Defuse Security String Generator
 ================================
 
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Spomky-Labs/defuse-generator/badges/quality-score.png?s=2cb72b489df8f3eace458ac2b8d35e74c1052307)](https://scrutinizer-ci.com/g/Spomky-Labs/defuse-generator/?branch=develop)
-[![Code Coverage](https://scrutinizer-ci.com/g/Spomky-Labs/defuse-generator/badges/coverage.png?s=0beab39cf2319604939cd5dffab44caa51b4c7a7)](https://scrutinizer-ci.com/g/Spomky-Labs/defuse-generator/?branch=develop)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Spomky-Labs/defuse-generator/badges/quality-score.png?b=develop)](https://scrutinizer-ci.com/g/Spomky-Labs/defuse-generator/?branch=develop)
+[![Code Coverage](https://scrutinizer-ci.com/g/Spomky-Labs/defuse-generator/badges/coverage.png?b=develop)](https://scrutinizer-ci.com/g/Spomky-Labs/defuse-generator/?branch=develop)
 
 [![Build Status](https://travis-ci.org/Spomky-Labs/defuse-generator.svg?branch=develop)](https://travis-ci.org/Spomky-Labs/defuse-generator)
 [![HHVM Status](http://hhvm.h4cc.de/badge/spomky-labs/defuse-generator.png)](http://hhvm.h4cc.de/package/spomky-labs/defuse-generator)
