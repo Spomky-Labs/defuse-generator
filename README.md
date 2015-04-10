@@ -38,7 +38,7 @@ The preferred way to install this library is to rely on Composer:
 
 ## How to use ##
 
-Your classes are ready to use? Have a look at [How to use](doc/Use.md) to use your exception manager with an OAuth2 server.
+Take a look at [How to use](doc/Use.md) to use this random string generator.
 
 ## Contributing
 

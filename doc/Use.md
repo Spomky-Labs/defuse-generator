@@ -1,6 +1,6 @@
 # How to use #
 
-To use this random string generator, you just have to create an instance of the `DefuseGenerator` class and use it.
+To use this random string generator, you just have to call the static method `getRandomString` of the class `Security\DefuseGenerator`.
 
 ```php
 <?php
