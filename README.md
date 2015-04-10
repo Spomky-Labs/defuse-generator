@@ -33,7 +33,7 @@ It has been successfully tested using `PHP 5.3` to `PHP 5.6` and `HHVM`
 The preferred way to install this library is to rely on Composer:
 
 ```sh
-    composer require "spomky-labs/defuse-generator" "~1.0"
+    composer require "spomky-labs/defuse-generator" "~1.0@dev"
 ```
 
 ## How to use ##
@@ -42,7 +42,7 @@ Your classes are ready to use? Have a look at [How to use](doc/Use.md) to use yo
 
 ## Contributing
 
-Requests for new features, bug fixed and all other ideas to make this library usefull are welcome. [Please follow these best practices](doc/Contributing.md).
+Requests for new features, bug fixed and all other ideas to make this library useful are welcome. [Please follow these best practices](doc/Contributing.md).
 
 ## Licence
 
