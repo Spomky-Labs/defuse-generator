@@ -34,11 +34,11 @@ class DefuseGenerator
 
         $password = '';
 
-        $iterLimit = max($length, $length * 64);   // If length is close to PHP_INT_MAX we don't want to overflow.
+        $iterLimit = max($length, $length * 64); // If length is close to PHP_INT_MAX we don't want to overflow.
         $randIdx = 0;
         while (self::safeStringLength($password) < $length) {
             if ($randIdx >= count($random)) {
-                $random = self::getRandomInts(2*($length - self::safeStringLength($password)));
+                $random = self::getRandomInts(2 * ($length - self::safeStringLength($password)));
                 $randIdx = 0;
             }
 
