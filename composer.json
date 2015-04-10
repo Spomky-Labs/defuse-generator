@@ -1,0 +1,30 @@
+{
+    "name": "spomky-labs/defuse-generator",
+    "type": "library",
+    "description": "Random String Generator",
+    "license": "MIT",
+    "keywords": ["String", "Generator", "Defuse", "Random"],
+    "homepage": "https://github.com/Spomky-Labs/defuse-generator",
+    "authors": [
+        {
+            "name": "Florent Morselli",
+            "homepage": "https://github.com/Spomky-Labs/defuse-generator/contributors"
+        }
+    ],
+    "require": {
+        "ext-mcrypt": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Security\\": "lib/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}
