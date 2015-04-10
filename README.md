@@ -1,10 +1,10 @@
 Defuse Security String Generator
 ================================
 
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Spomky-Labs/defuse-generator/badges/quality-score.png?b=develop)](https://scrutinizer-ci.com/g/Spomky-Labs/defuse-generator/?branch=develop)
-[![Code Coverage](https://scrutinizer-ci.com/g/Spomky-Labs/defuse-generator/badges/coverage.png?b=develop)](https://scrutinizer-ci.com/g/Spomky-Labs/defuse-generator/?branch=develop)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Spomky-Labs/defuse-generator/badges/quality-score.png?b=v1.0.0)](https://scrutinizer-ci.com/g/Spomky-Labs/defuse-generator/?branch=v1.0.0)
+[![Code Coverage](https://scrutinizer-ci.com/g/Spomky-Labs/defuse-generator/badges/coverage.png?b=v1.0.0)](https://scrutinizer-ci.com/g/Spomky-Labs/defuse-generator/?branch=v1.0.0)
 
-[![Build Status](https://travis-ci.org/Spomky-Labs/defuse-generator.svg?branch=develop)](https://travis-ci.org/Spomky-Labs/defuse-generator)
+[![Build Status](https://travis-ci.org/Spomky-Labs/defuse-generator.svg?branch=v1.0.0)](https://travis-ci.org/Spomky-Labs/defuse-generator)
 [![HHVM Status](http://hhvm.h4cc.de/badge/spomky-labs/defuse-generator.png)](http://hhvm.h4cc.de/package/spomky-labs/defuse-generator)
 
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/2debcff1-b085-4c05-992a-0b0a639d2527/big.png)](https://insight.sensiolabs.com/projects/2debcff1-b085-4c05-992a-0b0a639d2527)
@@ -33,7 +33,7 @@ It has been successfully tested using `PHP 5.3` to `PHP 5.6`, `PHP 7.0` and `HHV
 The preferred way to install this library is to rely on Composer:
 
 ```sh
-    composer require "spomky-labs/defuse-generator" "~1.0@dev"
+    composer require "spomky-labs/defuse-generator" "~1.0.0"
 ```
 
 ## How to use ##
