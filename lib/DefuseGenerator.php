@@ -69,11 +69,12 @@ class DefuseGenerator
      */
     private static function sideChannelSafeArrayIndex($string, $index)
     {
-        if (count($string) > 65535 || $index > count($string)) {
+        $nb = count($string);
+        if ($nb > 65535 || $index > $nb) {
             return false;
         }
         $character = 0;
-        for ($i = 0; $i < count($string); $i++) {
+        for ($i = 0; $i < $nb; $i++) {
             $x = $i ^ $index;
             $mask = (((($x | ($x >> 16)) & 0xFFFF) + 0xFFFF) >> 16) - 1;
             $character |= ord($string[$i]) & $mask;
