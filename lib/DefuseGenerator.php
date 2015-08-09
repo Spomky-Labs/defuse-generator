@@ -17,9 +17,9 @@ class DefuseGenerator
      * @param int    $length
      * @param string $charset
      *
-     * @return string
-     *
      * @throws \InvalidArgumentException If the charset is invalid or if the length is less than 1.
+     *
+     * @return string
      */
     public static function getRandomString($length, $charset = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-._~+/')
     {
@@ -63,7 +63,7 @@ class DefuseGenerator
      * Returns the character at index $index in $string in constant time.
      *
      * @param string[] $string
-     * @param integer $index
+     * @param int      $index
      *
      * @return bool|string
      */
@@ -87,9 +87,9 @@ class DefuseGenerator
      * Returns the smallest bit mask of all 1s such that ($toRepresent & mask) = $toRepresent.
      * $toRepresent must be an integer greater than or equal to 1.
      *
-     * @param integer $toRepresent
+     * @param int $toRepresent
      *
-     * @return integer
+     * @return int
      */
     private static function getMinimalBitMask($toRepresent)
     {
@@ -102,15 +102,15 @@ class DefuseGenerator
     }
 
     /**
-     * Returns an array of $numInts random integers between 0 and PHP_INT_MAX
+     * Returns an array of $numInts random integers between 0 and PHP_INT_MAX.
      *
-     * @param integer $numInts
+     * @param int $numInts
      *
      * @return integer[]
      */
     private static function getRandomInts($numInts)
     {
-        $ints = array();
+        $ints = [];
         $rawBinary = mcrypt_create_iv($numInts * PHP_INT_SIZE, MCRYPT_DEV_URANDOM);
         for ($i = 0; $i < $numInts; ++$i) {
             $thisInt = 0;
@@ -130,18 +130,20 @@ class DefuseGenerator
      *
      * @param string $str The string
      *
-     * @return integer The length of the string
+     * @return int The length of the string
      */
     private static function safeStringLength($str)
     {
         if (function_exists('mb_strlen')) {
             return mb_strlen($str, '8bit');
         }
+
         return strlen($str);
     }
 
     /**
-     * Checks if the length of the resulting random string is valid or not
+     * Checks if the length of the resulting random string is valid or not.
+     *
      * @param int $length The length of the random string
      */
     private static function checkLength($length)
