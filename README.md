@@ -19,24 +19,24 @@ This library provides a random string generator based on [source code of Defuse 
 
 This generator uses PHP Mcrypt extension to generate random strings.
 
-## The Release Process ##
+## The Release Process
 
 The release process [is described here](doc/Release.md).
 
-## Prerequisites ##
+## Prerequisites
 
-This library needs at least `PHP 5.3`.
-It has been successfully tested using `PHP 5.3` to `PHP 5.6`, `PHP 7.0` and `HHVM`
+This library needs at least `PHP 5.4`.
+It has been successfully tested using `PHP 5.4` to `PHP 5.6`, `PHP 7.0` and `HHVM`
 
-## Installation ##
+## Installation
 
 The preferred way to install this library is to rely on Composer:
 
 ```sh
-    composer require "spomky-labs/defuse-generator" "~1.0.0"
+composer require "spomky-labs/defuse-generator" "~1.0.0"
 ```
 
-## How to use ##
+## How to use
 
 Take a look at [How to use](doc/Use.md) to use this random string generator.
 
