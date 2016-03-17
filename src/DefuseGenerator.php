@@ -8,6 +8,8 @@ namespace Security;
  * WWW: https://defuse.ca/
  * Modified by Florent Morselli to fit on the project and coding standard
  */
+use Assert\Assertion;
+
 class DefuseGenerator
 {
     /**
@@ -18,8 +20,6 @@ class DefuseGenerator
      * @param string $charset
      *
      * @return string
-     *
-     * @throws \InvalidArgumentException If the charset is invalid or if the length is less than 1.
      */
     public static function getRandomString($length, $charset = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-._~+/')
     {
@@ -51,9 +51,8 @@ class DefuseGenerator
 
             // Guarantee termination
             $iterLimit--;
-            if ($iterLimit <= 0) {
-                throw new \RuntimeException('Hit iteration limit when generating password.');
-            }
+            Assertion::greaterOrEqualThan($iterLimit, 0, 'Hit iteration limit when generating password.');
+
         }
 
         return $password;
@@ -111,7 +110,7 @@ class DefuseGenerator
     private static function getRandomInts($numInts)
     {
         $ints = array();
-        $rawBinary = mcrypt_create_iv($numInts * PHP_INT_SIZE, MCRYPT_DEV_URANDOM);
+        $rawBinary = random_bytes($numInts * PHP_INT_SIZE);
         for ($i = 0; $i < $numInts; ++$i) {
             $thisInt = 0;
             for ($j = 0; $j < PHP_INT_SIZE; ++$j) {
@@ -134,10 +133,7 @@ class DefuseGenerator
      */
     private static function safeStringLength($str)
     {
-        if (function_exists('mb_strlen')) {
-            return mb_strlen($str, '8bit');
-        }
-        return strlen($str);
+        return mb_strlen($str, '8bit');
     }
 
     /**
@@ -146,9 +142,7 @@ class DefuseGenerator
      */
     private static function checkLength($length)
     {
-        if ($length < 1) {
-            throw new \InvalidArgumentException('Invalid length. Must be greater than 0.');
-        }
+        Assertion::greaterThan($length, 0, 'Invalid length. Must be greater than 0.');
     }
 
     /**
@@ -158,8 +152,7 @@ class DefuseGenerator
      */
     private static function checkCharset($charset)
     {
-        if (!is_string($charset) || self::safeStringLength($charset) < 2) {
-            throw new \InvalidArgumentException('Invalid charset. Must contain at least two characters.');
-        }
+        Assertion::string($charset, 'Invalid charset. Must contain at least two characters.');
+        Assertion::greaterOrEqualThan(self::safeStringLength($charset), 2, 'Invalid charset. Must contain at least two characters.');
     }
 }

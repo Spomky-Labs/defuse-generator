@@ -2,7 +2,7 @@ Defuse Security String Generator
 ================================
 
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Spomky-Labs/defuse-generator/badges/quality-score.png?b=release%2Fv1.0.0)](https://scrutinizer-ci.com/g/Spomky-Labs/defuse-generator/?branch=release%2Fv1.0.0)
-[![Code Coverage](https://scrutinizer-ci.com/g/Spomky-Labs/defuse-generator/badges/coverage.png?b=release%2Fv1.0.0)](https://scrutinizer-ci.com/g/Spomky-Labs/defuse-generator/?branch=release%2Fv1.0.0)
+[![Coverage Status](https://coveralls.io/repos/github/Spomky-Labs/defuse-generator/badge.svg?branch=master)](https://coveralls.io/github/Spomky-Labs/defuse-generator?branch=master)
 
 [![Build Status](https://travis-ci.org/Spomky-Labs/defuse-generator.svg?branch=release%2Fv1.0.0)](https://travis-ci.org/Spomky-Labs/defuse-generator)
 [![HHVM Status](http://hhvm.h4cc.de/badge/spomky-labs/defuse-generator.png)](http://hhvm.h4cc.de/package/spomky-labs/defuse-generator)

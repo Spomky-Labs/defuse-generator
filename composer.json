@@ -12,19 +12,23 @@
         }
     ],
     "require": {
-        "ext-mcrypt": "*"
+        "beberlei/assert": "^2.0",
+        "symfony/polyfill-mbstring": "^1.0",
+        "lib-openssl": "*",
+        "symfony/polyfill-php70": "^1.1"
     },
     "require-dev": {
-        "phpunit/phpunit": "~4.5"
+        "phpunit/phpunit": "^4.5|^5.0",
+        "satooshi/php-coveralls": "^1.0"
     },
     "autoload": {
         "psr-4": {
-            "Security\\": "lib/"
+            "Security\\": "src/"
         }
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "1.0.x-dev"
+            "dev-master": "2.0.x-dev"
         }
     }
 }
