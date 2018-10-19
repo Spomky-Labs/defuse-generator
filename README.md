@@ -12,7 +12,7 @@ Defuse Security String Generator
 [![Latest Stable Version](https://poser.pugx.org/spomky-labs/defuse-generator/v/stable.png)](https://packagist.org/packages/spomky-labs/defuse-generator)
 [![Latest Unstable Version](https://poser.pugx.org/spomky-labs/defuse-generator/v/unstable.png)](https://packagist.org/packages/spomky-labs/defuse-generator)
 [![Total Downloads](https://poser.pugx.org/spomky-labs/defuse-generator/downloads.png)](https://packagist.org/packages/spomky-labs/defuse-generator)
-[![License](https://poser.pugx.org/spomky-labs/defuse-generator/license.png)](https://packagist.org/packages/spomky-labs/defuse-generator)
+[![License](https://poser.pugx.org/spomky-labs/defuse-generator/license.png)](https://packagist.org/packages/spomky-labs/defuse-generator) [![GuardRails badge](https://badges.production.guardrails.io/Spomky-Labs/defuse-generator.svg)](https://www.guardrails.io)
 
 
 This library provides a random string generator based on [source code of Defuse Security](https://defuse.ca/generating-random-passwords.htm).
